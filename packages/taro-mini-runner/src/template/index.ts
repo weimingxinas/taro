@@ -113,7 +113,7 @@ function buildTemplate (level: number) {
   return template
 }
 
-export function buildTemplates (level: number) {
+export function buildBaseTemplate (level: number) {
   let template = `${buildXsTemplate()}
 <template name="taro_tmpl">
   <block ${Adapter.for}="{{root.cn}}" ${Adapter.key}="{{id}}">
