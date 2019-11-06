@@ -18,10 +18,7 @@
     "strictNullChecks": true,
     "target": "es2015",
     "traceResolution": false,
-    "types": ["jest"],
-    "paths": {
-      "@tarojs/shared": ["../shared/src"]
-    }
+    "types": ["jest"]
   },
   "include": [
     "./src"
