@@ -37,7 +37,7 @@ export interface IComponentObj {
   type?: string
 }
 
-export const createTarget = function createTarget () {
+export const createTarget = function createTarget (name) {
   return (compiler: webpack.compiler.Compiler) => {
     const { options } = compiler
     new JsonpTemplatePlugin().apply(compiler)
@@ -61,7 +61,7 @@ export default class TaroMiniPlugin {
   options: ITaroMiniPluginOptions
   context: string
   appEntry: string
-  appConfig: object
+  appConfig: any
   filesConfig: object
   pages: Set<IComponent>
   components: Set<IComponent>
